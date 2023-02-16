@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: black; */
+}
+body {
+    margin: 25px 0px;
+    color: #1d8eff;
+    background-color: #030404;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    word-spacing: 1.5px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    background-color: #fff;
+
+}
+
+.container,
+.logo,
+header {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.picture {
+    background-image: url(./assets/marek-okon-2m6wr8qMiio-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100pc;
+    width: 37vw;
+    height: 100vh;
+}
+
+.logo {
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20vh;
+    padding: 10px 0;
+    
+}
+
+.credit {
+    height:20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 70vh;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+header {
+    margin: 80px 50px;
+}
+
+a {
+    color: #47a2fe;
+}
+
+.right {
+    width: 50vw;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px
+    
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 12px;
+    font-family: 'Rock Salt', sans-serif;
+    text-align: center;
+    color: linen;
+    font-weight:bolder;
+    margin: 10px 0 -20px 0;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #cc0000;
+}
+ 
+.footerImg{
+    margin-top: -10px;
+    padding: 10px 0px;
+    align-items: center;
+}
+
+@media only screen and (min-width:700px) {
+    .container {
+        display: flex;
+    }
+}
