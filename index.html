@@ -7,6 +7,7 @@
     <title>Signup Form</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
+    <script src="./main.js" defer></script>
 </head>
 <body>
   <div class="container">
@@ -21,14 +22,48 @@
           </div>
       </div>
       <div class="right">
-          <header class="form-header right">
+          <header class="form-text right">
               <p>This is not a real online service! You know you 
               need something like this in your life to help you realise
-              your deepest dreams.</p>
+              your deepest dreams. Sign up now and get started</p>
               <p>You know you want to.</p>
           </header>
-          <form action="#">
-            
+          <form action="#" method="get" class="form">
+                  <p class="title">Let's do this</p>
+                  <div class="input">
+                        <label for="firstname">Name</label>
+                        <input type="text" name="firstname" id="firstname" required/>
+                        <span class="first-name-error error"></span>
+                    </div>
+                    <div class="input">
+                        <label for="lastname">Last name</label>
+                        <input type="text" name="lastname" id="lastname"/>
+                    </div>
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" 
+                            placeholder="joe@example.com" required>
+                        <span class="email-error"></span>
+                    </div>
+                    <div class="input">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="text" name="phone-number" id="phone-number">
+                    </div>
+                    <div class="input">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" 
+                               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                        <span class="pwd-error error"></span>
+                    </div>
+                    <div class="input">
+                        <label for="con-pass">Confirm Password</label>
+                        <input type="password" name="con-pass" id="con-pass" 
+                               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                               minlength="8" required>
+                        <span class="con-pwd-error error"></span>
+                    </div>
+                    <div class="button"><button>Create Account</button></div> 
+                    <div class="log-in">Already have an account?<a href="#"> Log in </a></div>
           </form>
       </div>
   </div>
