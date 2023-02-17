@@ -1,20 +1,30 @@
 const firstName  = document.querySelector('#firstname');
 const firstNameError = document.querySelector('.first-name-error');
 const email = document.querySelector('#email');
-const emailError = document.querySelector('.email-error')
+const emailError = document.querySelector('.email-error');
 const pw = document.querySelector('#password');
 const pwError = document.querySelector('.pwd-error');
 const pwC = document.querySelector('#con-pass');
-const pwcError = document.querySelector('.con-pwd-error')
+const pwcError = document.querySelector('.con-pwd-error');
+const lastName = document.querySelector('#lastname');
+const lastNameError = document.querySelector('.last-name-error');
 
 
 firstName.addEventListener('input', (e) => {
     if (firstName.value === '') {
         firstNameError.textContent = '* Please enter your first name.';
-    }else {
+    } else {
         firstNameError.textContent = '';
     }
  });
+
+lastName.addEventListener('input', (e) => {
+    if (lastName.value === '') {
+        lastNameError.textContent = '* Please enter your last name';
+    } else {
+        lastNameError.textContent = '';
+    }
+})
 
 email.addEventListener('input', (e) => {
     if (email.validity.typeMismatch) {
