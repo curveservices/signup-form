@@ -4,7 +4,7 @@
 :root {
     --text-color: #0080ff;
     --body-background: #030404;
-    --container-background: #e8e8e8;
+    --container-background: #e0e0e0;
     --form-background: #ffffff;
     --oposite-color: #ff7f00;
     --shadow-color:#151515;
@@ -146,7 +146,7 @@ button:hover {
 
 span {
     font-size: 0.5rem;
-    padding-top: 2px;
+    padding-top: 5px;
     color: red;
 }
 
