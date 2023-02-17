@@ -1,34 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* background-color: black; */
+:root {
+    --text-color: #0080ff;
+    --body-background: #030404;
+    --container-background: #e8e8e8;
+    --form-background: #ffffff;
+    --oposite-color: #ff7f00;
+    --shadow-color:#151515;
 }
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
 body {
-    margin: 25px 0px;
-    color: #1d8eff;
-    background-color: #030404;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 16px;
+    background-color: var(--body-background);
     line-height: 1.5;
     word-spacing: 1.5px;
     letter-spacing: 1.5px;
+    font-family: 'Orbitron', sans-serif;
     font-weight: bold;
+    width: 100vw;
+    height: 90vh;
     display: flex;
     flex-direction: column;
 }
 
 .container {
-    background-color: #fff;
-
+    background-color: var(--container-background);
+    display: flex;
+    flex-flow: row wrap;
+    width: 100vw;
 }
 
-.container,
-.logo,
-header {
+.logo, header {
     display: flex;
     flex-flow: row wrap;
 }
@@ -38,7 +46,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100pc;
-    width: 37vw;
+    width: 40vw;
     height: 100vh;
 }
 
@@ -63,20 +71,112 @@ header {
 }
 
 header {
-    margin: 80px 50px;
+    margin: 5px 2px;
+    padding: 0px 5px;
+    font-size: 0.7rem;
 }
 
-a {
-    color: #47a2fe;
+.title {
+    width: 100%;
 }
+
+form{
+    background: var(--form-background);
+    box-shadow: 0 10px 20px -3px var(--shadow-color);
+    gap: 20px;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+.input{
+    display: flex;
+    flex-flow: column wrap;
+    width: 0%;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    opacity: 80%;
+    padding: 2px;
+}
+
+input{
+    background: linear-gradient(180deg, #ffffff,#a4b4b4);
+    border: 1px solid #000;
+    border-radius: 3px;
+    height: 25px;
+    color: black;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+input:focus {
+    box-shadow: 3px 3px 8px 0px var(--shadow-color);
+}
+
+
 
 .right {
-    width: 50vw;
+    width: 60vw;
     display: flex;
     flex-flow: column wrap;
     gap: 20px
-    
+}
 
+button {
+    font-weight: bold;
+    color: var(--container-background);
+    background-color: var(--text-color);
+    margin-top: 5px;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+button:focus {
+    box-shadow: inset 3px 3px 8px 0 var(--shadow-color);
+}
+button:hover {
+    background: #005cb9;
+}
+
+.log-in {
+    font-size: 10px;
+    padding-top: 10px;
+}
+
+span {
+    font-size: 0.5rem;
+    padding-top: 2px;
+    color: red;
+}
+
+input + span {
+    position: relative;
+}
+  
+input + span::before {
+    position: absolute;
+    right: -12px;
+    top: -20px;
+}
+  
+  
+input:invalid + span::before {
+    content: "✖";
+    color: red;
+}
+  
+input:valid + span::before {
+    content: "✓";
+    color: green;
+}
+
+input:invalid {
+    border: 2px solid #e27100;
+}
+
+a {
+    color: var(--text-color);
 }
 
 footer {
@@ -93,7 +193,7 @@ footer {
 
 .footer-link {
   text-decoration: none;
-  color: #cc0000;
+  color: #e27100;
 }
  
 .footerImg{
@@ -105,5 +205,48 @@ footer {
 @media only screen and (min-width:700px) {
     .container {
         display: flex;
+    }
+    form{
+        box-shadow: 0 10px 20px -3px #161616;
+        display: flex;
+        flex-flow: row wrap;
+        gap: 20px;
+        padding: 20px;
+        font-size: 1.2em;
+    }
+    header {
+        font-size: 16px;
+        margin-top: 50px;
+        padding: 0px 50px 10px 20px;
+    }
+    .input{
+        display: flex;
+        flex-flow: column wrap;
+        width: 40%;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        opacity: 90%;
+        margin-left: 20px;
+    
+    }
+    button {
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--container-background);
+        background-color: var(--text-color);
+        border: none;
+        border-radius: 3px;
+        padding: 10px 40px;
+        cursor: pointer;
+        margin-left: 20px;
+    
+    }
+    .log-in {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    .title {
+        width: 100%;
+        margin-left: 20px;
     }
 }
