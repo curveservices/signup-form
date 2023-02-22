@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
 :root {
-    --text-color: #0080ff;
+    --text-color: #1d4ed8;
     --body-background: #030404;
-    --container-background: #e0e0e0;
-    --form-background: #ffffff;
+    --container-background: #bfdbfe;
+    --form-background: #e3e3e3;
     --oposite-color: #ff7f00;
     --shadow-color:#151515;
 }
@@ -106,6 +106,7 @@ input{
     color: black;
     font-weight: 900;
     text-transform: uppercase;
+    
 }
 
 input:focus {
