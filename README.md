@@ -1,6 +1,6 @@
 # Sign up Form
 
-## Abasic Sign-Up Form with Validation
+## A basic Sign-Up Form with Validation
 
 Live Demo:
 <a href="https://curveservices.github.io/signup-form/">Sign up Form</a>
@@ -24,4 +24,4 @@ The <a href="https://www.theodinproject.com/lessons/intermediate-html-and-css-si
 4. No need to make it look nice for mobile.
 5. Checking that the password fields match each other requires javascript. Try to implement this if you feel confident, otherwise just validate each field separately.
 
-Roz-dev
+Rozla-dev
