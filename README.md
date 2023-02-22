@@ -3,7 +3,7 @@
 ## Abasic Sign-Up Form with Validation
 
 Live Demo:
-![signup-form](https://curveservices.github.io/signup-form/)
+<a href="https://curveservices.github.io/signup-form/">Sign up Form</a>
 
 <img width="1100" alt="signup-form" src="https://user-images.githubusercontent.com/101556296/220703909-46fa5534-bc6c-4b7c-8d90-c4f78428643a.png">
 
