@@ -1,11 +1,12 @@
-# Sign up Form
+# A basic Sign-Up Form with Validation
 
-## A basic Sign-Up Form with Validation
+### Live Demo :point_right: <a href="https://curveservices.github.io/signup-form/">Sign up Form</a>
 
-Live Demo:
-<a href="https://curveservices.github.io/signup-form/">Sign up Form</a>
+### PC View 
 
 <img width="1100" alt="signup-form" src="https://user-images.githubusercontent.com/101556296/220703909-46fa5534-bc6c-4b7c-8d90-c4f78428643a.png">
+
+## Overview
 
 The <a href="https://www.theodinproject.com/lessons/intermediate-html-and-css-sign-up-form">Sign up Form</a> assigment was set as part of <a href="https://www.theodinproject.com/">**The Odin Project**</a> as the first project of the Intermediate HTML & CSS course. The Javascript part of this assignment was optional.
 
@@ -24,4 +25,8 @@ The <a href="https://www.theodinproject.com/lessons/intermediate-html-and-css-si
 4. No need to make it look nice for mobile.
 5. Checking that the password fields match each other requires javascript. Try to implement this if you feel confident, otherwise just validate each field separately.
 
-Rozla-dev
+## Extra Credit
+
+- Checking that the password fields match each other requires javascript. Try to implement this if you feel confident.
+
+    ***Rozla-dev 01/2023***
