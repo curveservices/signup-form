@@ -1,6 +1,6 @@
 # A basic Sign-Up Form with Validation
 
-### Live Demo :point_right: <a href="https://curveservices.github.io/signup-form/">Sign up Form</a>
+### Live Demo :point_right:     <a href="https://curveservices.github.io/signup-form/">Sign up Form</a>
 
 ### PC View 
 
