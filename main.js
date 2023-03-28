@@ -10,29 +10,17 @@ const lastName = document.querySelector('#lastname');
 const lastNameError = document.querySelector('.last-name-error');
 
 
-firstName.addEventListener('input', (e) => {
-    if (firstName.value === '') {
-        firstNameError.textContent = '* Please enter your first name.';
-    } else {
-        firstNameError.textContent = '';
-    }
- });
+firstName.addEventListener('input', () => {
+    firstName.value === '' ? firstNameError.textContent = '* Please enter your first name.' : firstNameError.textContent = '';
+});
 
-lastName.addEventListener('input', (e) => {
-    if (lastName.value === '') {
-        lastNameError.textContent = '* Please enter your last name';
-    } else {
-        lastNameError.textContent = '';
-    }
-})
+lastName.addEventListener('input', () => {
+    lastName.value === '' ? lastNameError.textContent = '* Please enter your last name' : lastNameError.textContent = '';
+});
 
 email.addEventListener('input', (e) => {
-    if (email.validity.typeMismatch) {
-         emailError.textContent = '* Please enter a vaild email address';
-    } else {
-        emailError.textContent = '';
-        }
-    });
+    email.validity.typeMismatch ? emailError.textContent = '* Please enter a vaild email address' : emailError.textContent = '';
+});
 
 pw.addEventListener("input", function (event) {
     if (pw.validity.patternMismatch){
@@ -70,9 +58,5 @@ pw.addEventListener("input", function (event) {
       });
 
 pwC.addEventListener('input', (e) => {
-    if (pwC.value !== pw.value) {
-        pwcError.textContent = '* Password does not match';
-    } else {
-        pwcError.textContent = '';
-    }
-})
+    pwC.value !== pw.value ? pwcError.textContent = '* Password does not match' : pwcError.textContent = '';
+    });
